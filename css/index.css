@@ -1,16 +1,40 @@
 .jumbotron {
-  height: 50vh;
+  height: 400px;
+  padding-top: 150px;
   background: url("../images/back.png") no-repeat center center;
-  background-size: cover;
-  padding-top: 200px;
 }
 
-.navbar {
-  margin-bottom: 0;
+.select-dropdown {
+  text-align: center;
 }
 
-#select_search {
-  position: relative;
-  left: -50px;
+select {
+  text-align: center;
+}
+
+option {
+  margin-left: 10px;
+  text-align: center;
+}
+
+span.caret {
   display: none;
+}
+
+.card {
+  margin: 0;
+}
+
+#search {
+  margin-bottom: 0;
+  border-bottom: 0;
+  padding-left: 10px;
+  width: calc(100% - 10px);
+}
+
+#search-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
 }

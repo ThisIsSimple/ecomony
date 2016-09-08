@@ -1,3 +1,3 @@
-$(document).ready(function(){
-  $('.dropdown-toggle').dropdown();
+$(document).ready(function() {
+  $('select').material_select();
 });
