@@ -15,6 +15,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
     <script src="js/nav.js"></script>
+    <script src="js/main.js"></script>
 
     <div class="container">
       <nav class="navbar navbar-default">
@@ -59,11 +60,16 @@
       <div class="row">
         <div class="col-md-4 col-md-offset-4">
           <div class="input-group">
-            <span class="input-group-addon" style="background-color: #fff;">매매</span>
+            <span class="input-group-addon" id="search_option">매매</span>
             <input type="text" class="form-control" placeholder="Search for...">
             <span class="input-group-btn">
               <button class="btn btn-default" type="button">Go!</button>
             </span>
+          </div>
+          <div class="btn-group" role="group" aria-label="..." id="select_search">
+            <button type="button" class="btn btn-default">매매</button>
+            <button type="button" class="btn btn-default">임대</button>
+            <button type="button" class="btn btn-default">쉐어</button>
           </div>
         </div>
       </div>
