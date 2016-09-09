@@ -56,13 +56,12 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">예산<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
+                <li><a>막대기 양 끝을 움직여 예산 조절</a></li>
+                <li><a>
+                  <form action="#">
+                    <input type="range" min="0" max="100" />
+                  </form>
+                </a></li>
               </ul>
             </li>
             <li class="dropdown">
@@ -93,7 +92,13 @@
                 <li><a href="#">소형(20평 이하)</a></li>
                 <li><a href="#">중형(20~39평)</a></li>
                 <li><a href="#">대형(40평 이상)</a></li>
-                <li><a href="#">기타<br>막대기 양 끝을 움직여 크기 조절</a></li>
+                <li><a href="#">기타</a></li>
+                <li><a>막대기 양 끝을 움직여 크기 조절</a></li>
+                <li><a>
+                  <form action="#">
+                    <input type="range" min="0" max="100" />
+                  </form>
+                </a></li>
                 <li role="separator" class="divider"></li>
                 <li><a>시설</a></li>
                 <li><a>
@@ -114,8 +119,52 @@
                 </a></li>
                 <li role="separator" class="divider"></li>
                 <li><a>공유품목</a></li>
+                <li><a>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">
+                    인터넷
+                  </label>
+                  <label>
+                    <input type="checkbox" value="">
+                    냉장고
+                  </label>
+                  <label>
+                    <input type="checkbox" value="">
+                    세탁기
+                  </label>
+                  <label>
+                    <input type="checkbox" value="">
+                    책상
+                  </label>
+                  <label>
+                    <input type="checkbox" value="">
+                    침대
+                  </label>
+                  <label>
+                    <input type="checkbox" value="">
+                    TV
+                  </label>
+                  <label>
+                    <input type="checkbox" value="">
+                    에어컨
+                  </label>
+                </div>
+                </a></li>
                 <li role="separator" class="divider"></li>
                 <li><a>거주규칙</a></li>
+                <li><a>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" value="">
+                      반려동물
+                    </label>
+                    <label>
+                      <input type="checkbox" value="">
+                      흡연
+                    </label>
+                  </div>
+                </a></li>
               </ul>
             </li>
           </ul>
@@ -141,9 +190,9 @@
     <main>
 
       <div class="row">
-        <div class="col-lg-8" id="map">
+        <div class="col-lg-7" id="map">
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-5">
           <div id="result_list_header">
             경기도 안양지역에서 원하는 조건의 집 27개를 찾았습니다.
           </div>
@@ -166,6 +215,48 @@
               <li><a href="#">준공일 ▽</a></li>
             </ul>
           </div>
+
+          <div class="blank"></div>
+
+          <div>
+            <div class="media">
+              <div class="media-left media-middle">
+                <a href="#">
+                  <img class="media-object" src="images/home.jpg" style="height: 150px;">
+                </a>
+              </div>
+              <div class="media-body">
+                <div class="media-head">
+                  <ul>
+                    <li><h4 class="mdeia-heading">진흥아파트</h4></li>
+                    <li>임대(전) : 30</li>
+                    <li>보증금 : 500</li>
+                  </ul>
+                </div>
+                <table class="table">
+                  <tr>
+                    <td>물건 유형</td><td>아파트</td>
+                  </tr>
+                  <tr>
+                    <td>면적</td><td>전용면적 77m^3(33평)</td>
+                  </tr>
+                  <tr>
+                    <td>구성</td><td>방 3, 욕실 2</td>
+                  </tr>
+                  <tr>
+                    <td>준공년</td><td>2016년</td>
+                  </tr>
+                  <tr>
+                    <td>시설</td><td>지하주차장, 경비시설</td>
+                  </tr>
+                  <tr>
+                    <td>상세설명</td><td>안양시 비산동에 위치한 로제비앙아파트 입니다. 조만간 비산역이 건설될 예쩡이며 향후 임곡마을 ...</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </main>

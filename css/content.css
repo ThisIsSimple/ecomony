@@ -16,10 +16,31 @@
   margin: 0;
 }
 
-.col-lg-4 {
-  padding: 20px;
+.col-lg-5 {
+  padding-top: 20px;
 }
 
 #result_list_header {
   display: inline;
+}
+
+.media-head ul {
+  padding: 0;
+}
+
+.media-head li {
+  list-style: none;
+  display: inline;
+}
+
+.media-head li h4 {
+  display: inline;
+}
+
+.table > tbody > tr > td {
+  padding: 0;
+}
+
+td:first-child {
+  width: 80px;
 }
