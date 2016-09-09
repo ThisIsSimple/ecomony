@@ -32,7 +32,7 @@ option {
 }
 
 span.caret {
-  display: none;
+  margin-right: 10px;
 }
 
 /* search bar */
