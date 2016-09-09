@@ -1,0 +1,25 @@
+#map {
+  height: 100vh;
+  background: url("../images/map.png") no-repeat center center;
+}
+
+.dropdown {
+  display: inline;
+}
+
+#dropdownMenu1 {
+  float: right;
+}
+
+.row {
+  background-color: #fff;
+  margin: 0;
+}
+
+.col-lg-4 {
+  padding: 20px;
+}
+
+#result_list_header {
+  display: inline;
+}
