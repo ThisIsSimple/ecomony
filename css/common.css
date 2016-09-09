@@ -2,6 +2,10 @@
   background-color: #fff;
 }
 
+.nav-wrapper .left {
+  margin-left: 95px;
+}
+
 nav .brand-logo {
   display: block;
   background-color: #3F070B;
