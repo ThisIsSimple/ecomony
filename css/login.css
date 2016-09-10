@@ -1,7 +1,10 @@
 #login {
 
+  display: none;
+  
   position: fixed;
   top: 100px;
+
 
   width: 500px;
 
