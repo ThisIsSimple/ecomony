@@ -1,3 +1,9 @@
+/* 반응형 설정 */
+@media max-width(100px) {
+  
+}
+
+
 #map {
   height: calc(100vh - 52px);
   background: url("../images/map.png") no-repeat center center;
@@ -5,14 +11,6 @@
 
 .dropdown {
   display: inline;
-}
-
-#dropdownMenu1 {
-  float: right;
-}
-
-.dropdown-menu {
-  float: right;
 }
 
 .row {
