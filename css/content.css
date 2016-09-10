@@ -11,6 +11,10 @@
   float: right;
 }
 
+.dropdown-menu {
+  float: right;
+}
+
 .row {
   background-color: #fff;
   margin: 0;
@@ -20,17 +24,28 @@
   padding-top: 20px;
 }
 
-#result_list_header {
+#result_list_header p {
   display: inline;
+}
+
+.media-heading {
+  color: #fff;
+}
+
+.media-head {
+  background-color: #555;
+  padding: 5px;
 }
 
 .media-head ul {
   padding: 0;
+  margin: 0;
 }
 
 .media-head li {
   list-style: none;
   display: inline;
+  color: #fff;
 }
 
 .media-head li h4 {
