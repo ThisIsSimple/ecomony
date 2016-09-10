@@ -1,12 +1,30 @@
 #login {
-
-  display: none;
-  
   position: fixed;
-  top: 100px;
-
-
-  width: 500px;
-
+  top: 30vh;
+  left: 40vw;
+  width: 336px;
   z-index: 100;
+}
+
+#login.panel {
+  padding: 20px;
+  padding-bottom: 5px;
+}
+
+#remember.col-sm-2 {
+  padding: 0;
+}
+
+.login_hide {
+  display: none;
+}
+
+/* login back */
+#login_back {
+  position: absolute;
+  background-color: #000;
+  opacity: 0.5;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
 }
