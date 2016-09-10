@@ -1,5 +1,6 @@
 body {
   background-color: #ddd;
+  font-size: 16px;
 }
 
 .blank {
@@ -9,6 +10,18 @@ body {
 /* nav */
 .navbar {
   margin-bottom: 0;
+}
+
+nav .glyphicon {
+  font-size: 24px;
+}
+
+.nav-icon {
+  padding: 10px;
+}
+
+.nav-icon a {
+  padding: 0;
 }
 
 .glyphicon-heart {
