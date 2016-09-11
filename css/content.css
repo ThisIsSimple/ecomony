@@ -52,10 +52,13 @@
   margin: 0;
 }
 
+.media-object {
+  height: 200px;
+}
+
 .media-left {
   padding: 0;
   width: 320px;
-  height: 220px;
   overflow: hidden;
 }
 
@@ -75,6 +78,10 @@ td:first-child {
   height: calc(100vh - 170px);
   overflow: auto;
   width: calc(100% + 18px);
+}
+
+.table {
+  margin-bottom: 0;
 }
 
 .hide_scroll {

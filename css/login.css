@@ -6,6 +6,14 @@
   z-index: 100;
 }
 
+#login .col-sm-11, #login .col-sm-1 {
+  padding: 0;
+}
+
+#login .col-sm-1 {
+  padding-top: 7px;
+}
+
 #login.panel {
   padding: 20px;
   padding-bottom: 5px;
