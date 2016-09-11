@@ -1,2 +1,10 @@
 $(document).ready(function(){
+  $('.glyphicon-heart').click(function(){
+    $(this).addClass('.glyphicon-heart-empty');
+    $(this).removeClass('.glyphicon-heart');
+  });
+  $('.glyphicon-heart-empty').click(function(){
+    $(this).addClass('.glyphicon-heart');
+    $(this).removeClass('.glyphicon-heart-empty');
+  });
 });

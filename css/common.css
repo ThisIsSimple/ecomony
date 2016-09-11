@@ -7,6 +7,8 @@ body {
   height: 50px;
 }
 
+/* grid system */
+
 /* nav */
 .navbar {
   margin-bottom: 0;
@@ -24,6 +26,6 @@ nav .glyphicon {
   padding: 0;
 }
 
-.glyphicon-heart {
+.glyphicon-heart, .glyphicon-heart-empty {
   color: #f00;
 }

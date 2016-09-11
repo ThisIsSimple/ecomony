@@ -93,12 +93,19 @@
             </li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">예산<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a>막대기 양 끝을 움직여 예산 조절</a></li>
+              <ul class="dropdown-menu" id="budget">
+                <li><a>예산의 범위를 지정해 주세요.</a></li>
                 <li><a>
-                  <form action="#">
-                    <input type="range" min="0" max="100" />
-                  </form>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <input type="text" class="form-control" placeholder="만원">
+                    </div>
+                    <div class="col-xs-2">만원 이상</div>
+                    <div class="col-xs-4">
+                      <input type="text" class="form-control" placeholder="만원">
+                    </div>
+                    <div class="col-xs-2">만원 이하</div>
+                  </div>
                 </a></li>
               </ul>
             </li>
@@ -119,11 +126,17 @@
                 <li><a href="#">중형(20~39평)</a></li>
                 <li><a href="#">대형(40평 이상)</a></li>
                 <li><a href="#">기타</a></li>
-                <li><a>막대기 양 끝을 움직여 크기 조절</a></li>
                 <li><a>
-                  <form action="#">
-                    <input type="range" min="0" max="100" />
-                  </form>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <input type="text" class="form-control" placeholder="평">
+                    </div>
+                    <div class="col-xs-2">평 이상</div>
+                    <div class="col-xs-4">
+                      <input type="text" class="form-control" placeholder="평">
+                    </div>
+                    <div class="col-xs-2">평 이하</div>
+                  </div>
                 </a></li>
                 <li role="separator" class="divider"></li>
                 <li><a>시설</a></li>
@@ -182,13 +195,11 @@
     <main>
 
       <div class="row">
-        <div class="col-lg-6 col-md-4 col-xs-12" id="map">
-        </div>
+        <div class="col-lg-6 col-md-4 col-xs-12" id="map"></div>
+
         <div class="col-lg-6 col-md-8 col-xs-12" style="padding: 0;">
           <div id="result_list_header">
-
             <p>경기도 안양지역에서 원하는 조건의 집 27개를 찾았습니다.</p>
-
             <div class="dropdown">
               <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                 정렬 순서
@@ -207,12 +218,10 @@
                 <li><a href="#">준공일 ▽</a></li>
               </ul>
             </div>
-
           </div>
 
           <div class="hide_scroll">
             <div id="result_list">
-
               <div class="media">
                 <div class="media-left media-middle">
                   <img class="media-object" src="images/home.jpg">
@@ -248,14 +257,271 @@
                       </td>
                     </tr>
                   </table>
-
-
-
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left media-middle">
+                  <img class="media-object" src="images/home.jpg">
+                </div>
+                <div class="media-body">
+                  <div class="media-head">
+                    <ul>
+                      <li><h4 class="mdeia-heading">진흥아파트</h4></li>
+                      <li>임대(전) : 30</li>
+                      <li>보증금 : 500</li>
+                      <li><a href="#"><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span></a></li>
+                    </ul>
+                  </div>
+                  <table class="table">
+                    <tr><td>물건 유형</td><td>아파트</td>
+                      <td rowspan="5">
+                        <ul>
+                          <li>예상 실거주 비용</li>
+                          <li>2년 1000만원</li>
+                          <li>4년 1400만원</li>
+                          <li>6년 3000만원</li>
+                          <li>10년 7000만원</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr><td>면적</td><td>전용면적 77m^3(33평)</td></tr>
+                    <tr><td>구성</td><td>방 3, 욕실 2</td></tr>
+                    <tr><td>준공년</td><td>2016년</td></tr>
+                    <tr><td>시설</td><td>지하주차장, 경비시설</td></tr>
+                    <tr><td>상세설명</td><td>안양시 비산동에 위치한 로제비앙아파트 입니다. 조만간 비산역이 건설될 예정이며 ...</td>
+                      <td>
+                        <button type="button" class="btn btn-danger">자세히 보기</button>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left media-middle">
+                  <img class="media-object" src="images/home.jpg">
+                </div>
+                <div class="media-body">
+                  <div class="media-head">
+                    <ul>
+                      <li><h4 class="mdeia-heading">진흥아파트</h4></li>
+                      <li>임대(전) : 30</li>
+                      <li>보증금 : 500</li>
+                      <li><a href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></a></li>
+                    </ul>
+                  </div>
+                  <table class="table">
+                    <tr><td>물건 유형</td><td>아파트</td>
+                      <td rowspan="5">
+                        <ul>
+                          <li>예상 실거주 비용</li>
+                          <li>2년 1000만원</li>
+                          <li>4년 1400만원</li>
+                          <li>6년 3000만원</li>
+                          <li>10년 7000만원</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr><td>면적</td><td>전용면적 77m^3(33평)</td></tr>
+                    <tr><td>구성</td><td>방 3, 욕실 2</td></tr>
+                    <tr><td>준공년</td><td>2016년</td></tr>
+                    <tr><td>시설</td><td>지하주차장, 경비시설</td></tr>
+                    <tr><td>상세설명</td><td>안양시 비산동에 위치한 로제비앙아파트 입니다. 조만간 비산역이 건설될 예정이며 ...</td>
+                      <td>
+                        <button type="button" class="btn btn-danger">자세히 보기</button>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left media-middle">
+                  <img class="media-object" src="images/home.jpg">
+                </div>
+                <div class="media-body">
+                  <div class="media-head">
+                    <ul>
+                      <li><h4 class="mdeia-heading">진흥아파트</h4></li>
+                      <li>임대(전) : 30</li>
+                      <li>보증금 : 500</li>
+                      <li><a href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></a></li>
+                    </ul>
+                  </div>
+                  <table class="table">
+                    <tr><td>물건 유형</td><td>아파트</td>
+                      <td rowspan="5">
+                        <ul>
+                          <li>예상 실거주 비용</li>
+                          <li>2년 1000만원</li>
+                          <li>4년 1400만원</li>
+                          <li>6년 3000만원</li>
+                          <li>10년 7000만원</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr><td>면적</td><td>전용면적 77m^3(33평)</td></tr>
+                    <tr><td>구성</td><td>방 3, 욕실 2</td></tr>
+                    <tr><td>준공년</td><td>2016년</td></tr>
+                    <tr><td>시설</td><td>지하주차장, 경비시설</td></tr>
+                    <tr><td>상세설명</td><td>안양시 비산동에 위치한 로제비앙아파트 입니다. 조만간 비산역이 건설될 예정이며 ...</td>
+                      <td>
+                        <button type="button" class="btn btn-danger">자세히 보기</button>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left media-middle">
+                  <img class="media-object" src="images/home.jpg">
+                </div>
+                <div class="media-body">
+                  <div class="media-head">
+                    <ul>
+                      <li><h4 class="mdeia-heading">진흥아파트</h4></li>
+                      <li>임대(전) : 30</li>
+                      <li>보증금 : 500</li>
+                      <li><a href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></a></li>
+                    </ul>
+                  </div>
+                  <table class="table">
+                    <tr><td>물건 유형</td><td>아파트</td>
+                      <td rowspan="5">
+                        <ul>
+                          <li>예상 실거주 비용</li>
+                          <li>2년 1000만원</li>
+                          <li>4년 1400만원</li>
+                          <li>6년 3000만원</li>
+                          <li>10년 7000만원</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr><td>면적</td><td>전용면적 77m^3(33평)</td></tr>
+                    <tr><td>구성</td><td>방 3, 욕실 2</td></tr>
+                    <tr><td>준공년</td><td>2016년</td></tr>
+                    <tr><td>시설</td><td>지하주차장, 경비시설</td></tr>
+                    <tr><td>상세설명</td><td>안양시 비산동에 위치한 로제비앙아파트 입니다. 조만간 비산역이 건설될 예정이며 ...</td>
+                      <td>
+                        <button type="button" class="btn btn-danger">자세히 보기</button>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left media-middle">
+                  <img class="media-object" src="images/home.jpg">
+                </div>
+                <div class="media-body">
+                  <div class="media-head">
+                    <ul>
+                      <li><h4 class="mdeia-heading">진흥아파트</h4></li>
+                      <li>임대(전) : 30</li>
+                      <li>보증금 : 500</li>
+                      <li><a href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></a></li>
+                    </ul>
+                  </div>
+                  <table class="table">
+                    <tr><td>물건 유형</td><td>아파트</td>
+                      <td rowspan="5">
+                        <ul>
+                          <li>예상 실거주 비용</li>
+                          <li>2년 1000만원</li>
+                          <li>4년 1400만원</li>
+                          <li>6년 3000만원</li>
+                          <li>10년 7000만원</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr><td>면적</td><td>전용면적 77m^3(33평)</td></tr>
+                    <tr><td>구성</td><td>방 3, 욕실 2</td></tr>
+                    <tr><td>준공년</td><td>2016년</td></tr>
+                    <tr><td>시설</td><td>지하주차장, 경비시설</td></tr>
+                    <tr><td>상세설명</td><td>안양시 비산동에 위치한 로제비앙아파트 입니다. 조만간 비산역이 건설될 예정이며 ...</td>
+                      <td>
+                        <button type="button" class="btn btn-danger">자세히 보기</button>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left media-middle">
+                  <img class="media-object" src="images/home.jpg">
+                </div>
+                <div class="media-body">
+                  <div class="media-head">
+                    <ul>
+                      <li><h4 class="mdeia-heading">진흥아파트</h4></li>
+                      <li>임대(전) : 30</li>
+                      <li>보증금 : 500</li>
+                      <li><a href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></a></li>
+                    </ul>
+                  </div>
+                  <table class="table">
+                    <tr><td>물건 유형</td><td>아파트</td>
+                      <td rowspan="5">
+                        <ul>
+                          <li>예상 실거주 비용</li>
+                          <li>2년 1000만원</li>
+                          <li>4년 1400만원</li>
+                          <li>6년 3000만원</li>
+                          <li>10년 7000만원</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr><td>면적</td><td>전용면적 77m^3(33평)</td></tr>
+                    <tr><td>구성</td><td>방 3, 욕실 2</td></tr>
+                    <tr><td>준공년</td><td>2016년</td></tr>
+                    <tr><td>시설</td><td>지하주차장, 경비시설</td></tr>
+                    <tr><td>상세설명</td><td>안양시 비산동에 위치한 로제비앙아파트 입니다. 조만간 비산역이 건설될 예정이며 ...</td>
+                      <td>
+                        <button type="button" class="btn btn-danger">자세히 보기</button>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left media-middle">
+                  <img class="media-object" src="images/home.jpg">
+                </div>
+                <div class="media-body">
+                  <div class="media-head">
+                    <ul>
+                      <li><h4 class="mdeia-heading">진흥아파트</h4></li>
+                      <li>임대(전) : 30</li>
+                      <li>보증금 : 500</li>
+                      <li><a href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></a></li>
+                    </ul>
+                  </div>
+                  <table class="table">
+                    <tr><td>물건 유형</td><td>아파트</td>
+                      <td rowspan="5">
+                        <ul>
+                          <li>예상 실거주 비용</li>
+                          <li>2년 1000만원</li>
+                          <li>4년 1400만원</li>
+                          <li>6년 3000만원</li>
+                          <li>10년 7000만원</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr><td>면적</td><td>전용면적 77m^3(33평)</td></tr>
+                    <tr><td>구성</td><td>방 3, 욕실 2</td></tr>
+                    <tr><td>준공년</td><td>2016년</td></tr>
+                    <tr><td>시설</td><td>지하주차장, 경비시설</td></tr>
+                    <tr><td>상세설명</td><td>안양시 비산동에 위치한 로제비앙아파트 입니다. 조만간 비산역이 건설될 예정이며 ...</td>
+                      <td>
+                        <button type="button" class="btn btn-danger">자세히 보기</button>
+                      </td>
+                    </tr>
+                  </table>
                 </div>
               </div>
 
             </div>
           </div>
+
         </div>
       </div>
     </main>
