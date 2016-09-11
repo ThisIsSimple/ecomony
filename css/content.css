@@ -2,6 +2,7 @@ ul {
   list-style: none;
   padding: 0;
   padding-right: 20px;
+  margin: 0;
 }
 
 
@@ -76,13 +77,25 @@ ul {
   padding-right: 3px;
 }
 
+td:first-child {
+  width: 80px;
+}
+
 td:nth-child(2) {
   width: 300px;
   border-right: 1px solid #ddd;
 }
 
-td:first-child {
-  width: 80px;
+td:nth-child(3) {
+  text-align: center;
+}
+
+td:nth-child(3) li:first-child {
+  font-weight: bold;
+}
+
+tr:last-child td:last-child {
+  padding-top: 6px;
 }
 
 
