@@ -1,6 +1,7 @@
-/* 반응형 설정 */
-@media max-width(100px) {
-
+ul {
+  list-style: none;
+  padding: 0;
+  padding-right: 20px;
 }
 
 
@@ -19,8 +20,11 @@
 }
 
 #result_list_header {
-  padding: 20px;
   border-bottom: 2px solid #ddd;
+}
+
+#result_list_header p {
+  margin: 20px 0 20px 20px;
 }
 
 .media-heading {
@@ -62,8 +66,19 @@
   overflow: hidden;
 }
 
+.table {
+  margin-bottom: 0;
+}
+
 .table > tbody > tr > td {
   padding: 0;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+td:nth-child(2) {
+  width: 300px;
+  border-right: 1px solid #ddd;
 }
 
 td:first-child {
@@ -77,11 +92,7 @@ td:first-child {
 #result_list {
   height: calc(100vh - 170px);
   overflow: auto;
-  width: calc(100% + 18px);
-}
-
-.table {
-  margin-bottom: 0;
+  width: calc(100% + 10px);
 }
 
 .hide_scroll {
