@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Octur scael</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/index.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/login.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/new.css" media="screen" title="no title">
+
+  </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/login.js"></script>
+
+    <div id="login_back" class="login_hide"></div>
+
+    <div class="panel panel-default login_hide" id="login">
+      <div class="col-sm-11">
+        <h4>로그인</h4>
+      </div>
+      <div class="col-sm-1">
+        <button type="submit" id="close_btn" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-remove"></span></button>
+      </div>
+      <form class="form-horizontal">
+        <div class="form-group">
+          <div class="col-sm-12">
+            <input type="email" class="form-control" id="inputUsername3" placeholder="아이디">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-12">
+            <input type="password" class="form-control" id="inputPassword3" placeholder="비밀번호">
+          </div>
+          <div class="col-sm-offset-6 col-sm-6" id="remember">
+            <div class="checkbox"><label><input type="checkbox">로그인 기억하기</label></div>
+          </div>
+        </div>
+
+        <div class="form-group" id="buttons">
+          <div class="col-sm-12">
+            <button type="submit" class="btn btn-danger btn-lg btn-block" id="login_button-lg">로그인</button>
+          </div>
+          <div class="col-sm-7"><a href="#">아이디/비밀번호 찾기</a></div>
+          <div class="col-sm-5" style="text-align: right;">
+            <a href="#">무료회원가입</a>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">매매</a></li>
+            <li><a href="#">임대</a></li>
+            <li><a href="#">쉐어</a></li>
+            <li><a href="#">집등록</a></li>
+            <li class="nav-icon"><a href="#" style="padding: 0;"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></a></li>
+            <li class="nav-icon"><a href="#" style="padding: 0;"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></a></li>
+            <li class="nav-profile"><a style="padding: 0;"><img src="images/profile.png" class="img-circle"></a></li>
+            <li><a>000님, 환영합니다!</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="row">
+        <div class="col-md-10">
+          <div class="page-header">
+            <h1>사용자 등록</h1>
+          </div>
+
+          <div class="row">
+            <div class="col-md-2">
+              <style>
+              .thumbnail {
+                background: url("images/profile.png") no-repeat center center;
+              }
+              </style>
+              <a href="#" class="thumbnail"></a>
+            </div>
+            <div class="col-md-4">
+              <div class="col-md-12">
+                <label class="radio-inline"><input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">공인중개사</label>
+                <label class="radio-inline"><input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">개인</label>
+                <label class="radio-inline"><input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">임차인</label>
+              </div>
+              <hr>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="exampleInputName1">등록자명</label>
+                  <input type="password" class="form-control" id="exampleInputName1" placeholder="등록자명">
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="exampleInputNumber1">연락처</label>
+                  <input type="password" class="form-control" id="exampleInputNumber1" placeholder="연락처">
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="exampleInputNumber1">연락처</label>
+                  <input type="password" class="form-control" id="exampleInputNumber1" placeholder="연락처">
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="exampleInpuAddress1">연락처</label>
+                  <input type="password" class="form-control" id="exampleInputAddress1" placeholder="연락처">
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="exampleInputHead1">대표자</label>
+                  <input type="password" class="form-control" id="exampleInputHead1" placeholder="대표자">
+                </div>
+              </div>
+              <div class="col-md-12">
+                <label for="exampleTextarea">소개</label>
+                <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

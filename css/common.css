@@ -26,6 +26,14 @@ nav .glyphicon {
   padding: 0;
 }
 
+nav img.img-circle {
+  width: 28px;
+}
+
+.nav-profile {
+  padding: 10px;
+}
+
 .glyphicon-heart, .glyphicon-heart-empty {
   color: #f00;
 }

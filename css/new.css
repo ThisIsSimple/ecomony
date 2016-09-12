@@ -1,0 +1,11 @@
+.row {
+  background-color: #fff;
+}
+
+.col-md-10 {
+  padding-left: 80px;
+}
+
+.thumbnail {
+  height: 300px;
+}

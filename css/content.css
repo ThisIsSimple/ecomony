@@ -135,7 +135,7 @@ tr:last-child td:last-child {
 #result_list {
   height: calc(100vh - 170px);
   overflow: auto;
-  width: calc(100% + 10px);
+  width: calc(100% + 14px);
 }
 
 .hide_scroll {
