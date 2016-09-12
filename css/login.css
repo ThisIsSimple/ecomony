@@ -1,9 +1,19 @@
 #login {
   position: fixed;
-  top: 32vh;
+  top: 20vh;
   left: 40vw;
   width: 336px;
   z-index: 100;
+}
+
+#login.panel {
+  padding-top: 0 !important;
+  height: 420px;
+}
+
+#close_btn {
+  position: relative;
+  right: -20px;
 }
 
 #login .col-sm-11, #login .col-sm-1 {
@@ -20,6 +30,10 @@
 }
 
 #remember.col-sm-2 {
+  padding: 0;
+}
+
+.col-sm-5, .col-sm-7 {
   padding: 0;
 }
 
