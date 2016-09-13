@@ -18,6 +18,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/login.js"></script>
+    <script src="js/new.js"></script>
 
     <div id="login_back" class="login_hide"></div>
 
@@ -91,7 +92,7 @@
           </div>
 
           <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-2" id="user">
               <style>
               .thumbnail {
                 background: url("images/profile.png") no-repeat center center;
@@ -101,49 +102,71 @@
             </div>
             <div class="col-md-4">
               <div class="col-md-12">
-                <label class="radio-inline"><input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">공인중개사</label>
+                <label class="radio-inline"><input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" selected>공인중개사</label>
                 <label class="radio-inline"><input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">개인</label>
                 <label class="radio-inline"><input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">임차인</label>
               </div>
               <hr>
-              <div class="col-md-12">
-                <div class="form-group">
-                  <label for="exampleInputName1">등록자명</label>
-                  <input type="password" class="form-control" id="exampleInputName1" placeholder="등록자명">
+              <div id="gongin" class="disnone">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="exampleInputName1">등록자명</label>
+                    <input type="password" class="form-control" id="exampleInputName1" placeholder="등록자명">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="exampleInputNumber1">연락처</label>
+                    <input type="password" class="form-control" id="exampleInputNumber1" placeholder="연락처">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="exampleInputNumber1">상호명</label>
+                    <input type="password" class="form-control" id="exampleInputNumber1" placeholder="상호명">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="exampleInpuAddress1">중개사무소 소재지</label>
+                    <input type="password" class="form-control" id="exampleInputAddress1" placeholder="중개사무소 소재지">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="exampleInputHead1">대표자</label>
+                    <input type="password" class="form-control" id="exampleInputHead1" placeholder="대표자">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <label for="exampleTextarea">소개</label>
+                  <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
                 </div>
               </div>
-              <div class="col-md-12">
-                <div class="form-group">
-                  <label for="exampleInputNumber1">연락처</label>
-                  <input type="password" class="form-control" id="exampleInputNumber1" placeholder="연락처">
+              <div id="personal" class="disnone">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="exampleInputName1">등록자명</label>
+                    <input type="password" class="form-control" id="exampleInputName1" placeholder="등록자명">
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-12">
-                <div class="form-group">
-                  <label for="exampleInputNumber1">연락처</label>
-                  <input type="password" class="form-control" id="exampleInputNumber1" placeholder="연락처">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="exampleInputNumber1">연락처</label>
+                    <input type="password" class="form-control" id="exampleInputNumber1" placeholder="연락처">
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-12">
-                <div class="form-group">
-                  <label for="exampleInpuAddress1">연락처</label>
-                  <input type="password" class="form-control" id="exampleInputAddress1" placeholder="연락처">
+                <div class="col-md-12">
+                  <label for="exampleTextarea">소개</label>
+                  <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
                 </div>
-              </div>
-              <div class="col-md-12">
-                <div class="form-group">
-                  <label for="exampleInputHead1">대표자</label>
-                  <input type="password" class="form-control" id="exampleInputHead1" placeholder="대표자">
-                </div>
-              </div>
-              <div class="col-md-12">
-                <label for="exampleTextarea">소개</label>
-                <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+
     </main>
   </body>
 </html>

@@ -1,11 +1,75 @@
 .row {
   background-color: #fff;
+  margin: 0;
+}
+
+main > .container {
+  background-color: #fdfdfd;
 }
 
 .col-md-10 {
   padding-left: 80px;
 }
 
-.thumbnail {
+#user .thumbnail {
   height: 300px;
+}
+
+.disnone {
+  display: none;
+}
+
+
+h4 {
+  background-color: #aaa;
+  padding: 5px 3px;
+}
+
+#location {
+  padding-top: 10px;
+  height: 300px;
+  background: url("../images/map.png") no-repeat center center;
+  background-size: cover;
+}
+
+#location .row {
+  background-color: transparent;
+}
+
+
+#image-upload {
+  height: 200px;
+  text-align: center;
+  border: 2px dashed #D9534F;
+  padding-top: 65px;
+  margin: 0px;
+  margin-bottom: 30px;
+}
+
+#step2 .thumbnail {
+  min-height: 160px;
+  text-align: center;
+}
+
+#step2 #main-image {
+  height: 340px;
+}
+
+#step2 #sub-images span {
+  font-size: 30px;
+  color: #D9534F;
+  margin: 60px 0;
+}
+
+#step2 #main-image span {
+  margin: 150px 0;
+}
+
+#step2 .thumbnail:hover {
+  border-color: #D9534F;
+}
+
+#step4 .form-control {
+  width: 60px;
+  height: 20px;
 }

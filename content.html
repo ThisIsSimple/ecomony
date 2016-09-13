@@ -7,6 +7,8 @@
 
     <title>Octur scael</title>
 
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/common.css" media="screen" title="no title">
     <link rel="stylesheet" href="css/index.css" media="screen" title="no title">
@@ -14,19 +16,25 @@
     <link rel="stylesheet" href="css/datepicker.css" media="screen" title="no title">
     <link rel="stylesheet" href="css/login.css" media="screen" title="no title">
 
-    <!-- 라이브러리 로드 순서는 아래와 같다. cdnjs 저장소에서 라이브러리를 로드하였다. -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.0.0/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.2/moment-with-locales.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.0.0/js/bootstrap-datetimepicker.min.js"></script>
-
+    <!-- for datepicker -->
+    <link rel="stylesheet" href="css/daterangepicker.css" media="screen" title="no title">
+    <script type="text/javascript" src="js/moment.js"></script>
+    <script type="text/javascript" src="js/daterangepicker.js"></script>
 
   </head>
   <body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap-datepicket.js"></script>
     <script src="js/content.js"></script>
     <script src="js/login.js"></script>
+
+    <div class="container">
+  		<div id="reportrange" class="pull-right"
+  			style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 100%">
+  			<i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp; <span></span>
+  			<b class="caret"></b>
+  		</div>
+  	</div>
 
     <div id="login_back" class="login_hide"></div>
 
@@ -48,7 +56,7 @@
           <div class="col-sm-12">
             <input type="password" class="form-control" id="inputPassword3" placeholder="비밀번호">
           </div>
-          <div class="col-sm-offset-6 col-sm-6" id="remember">
+          <div class="col-sm-12" id="remember">
             <div class="checkbox"><label><input type="checkbox">로그인 기억하기</label></div>
           </div>
         </div>
@@ -93,6 +101,15 @@
                 <li>
                   <a href="#">기타기간</a>
                 </li>
+
+                  <div class="container">
+                    <div id="reportrange" class="pull-right"
+                      style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 100%">
+                      <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp; <span></span>
+                      <b class="caret"></b>
+                    </div>
+                  </div>
+
               </ul>
             </li>
             <li class="dropdown">
@@ -228,9 +245,13 @@
             <div id="result_list">
 
               <div class="media">
-                <div class="media-left media-middle">
-                  <img class="media-object" src="images/home.jpg">
-                </div>
+                <style>
+                .media-left {
+                  background: url("images/home.jpg") no-repeat center center;
+                  background-size: cover;
+                }
+                </style>
+                <div class="media-left media-middle"></div>
                 <div class="media-body">
                   <div class="media-head">
                     <ul>
@@ -263,5 +284,43 @@
         </div>
       </div>
     </main>
+
+
+    <script type="text/javascript">
+      $(function() {
+        // 시작 날짜와 끝나는 날짜를 지정합니다. 여기에서는 30일로 설정하였습니다.
+        var start_date = moment().subtract(29, 'days');
+        var end_date = moment();
+        function cb(start, end) {
+          $('#reportrange span').html(
+              start.format('YYYY-MM-DD') + ' - '
+                  + end.format('YYYY-MM-DD'));
+        }
+          cb(start_date, end_date);
+
+        $('#reportrange')
+            .daterangepicker(
+                {
+                  ranges : {
+                    '오늘' : [ moment(), moment() ],
+                    '어제' : [ moment().subtract(1, 'days'),
+                          moment().subtract(1, 'days') ],
+                    '지난 7일' : [ moment().subtract(6, 'days'),
+                        moment() ],
+                    '지난 30일' : [ moment().subtract(29, 'days'),
+                        moment() ],
+                    '이번 달' : [ moment().startOf('month'),
+                        moment().endOf('month') ],
+                    '지난 달' : [
+                        moment().subtract(1, 'month')
+                            .startOf('month'),
+                        moment().subtract(1, 'month')
+                            .endOf('month') ]
+                  },
+                  'startDate' :  start_date,
+                  'endDate' : end_date
+                }, cb);
+      });
+    </script>
   </body>
 </html>
