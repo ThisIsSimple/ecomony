@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Octur scael</title>
+
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/index.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/login.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/datepicker.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/new.css" media="screen" title="no title">
+
+    <!-- for datepicker -->
+    <link rel="stylesheet" href="css/daterangepicker.css" media="screen" title="no title">
+    <script type="text/javascript" src="js/moment.js"></script>
+    <script type="text/javascript" src="js/daterangepicker.js"></script>
+
+  </head>
+  <body>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/new.js"></script>
+
+    <div id="login_back" class="login_hide"></div>
+
+    <div class="panel panel-default login_hide" id="login">
+      <div class="col-sm-11">
+        <h4>로그인</h4>
+      </div>
+      <div class="col-sm-1">
+        <button type="submit" id="close_btn" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-remove"></span></button>
+      </div>
+      <form class="form-horizontal">
+        <div class="form-group">
+          <div class="col-sm-12">
+            <input type="email" class="form-control" id="inputUsername3" placeholder="아이디">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-12">
+            <input type="password" class="form-control" id="inputPassword3" placeholder="비밀번호">
+          </div>
+          <div class="col-sm-offset-6 col-sm-6" id="remember">
+            <div class="checkbox"><label><input type="checkbox">로그인 기억하기</label></div>
+          </div>
+        </div>
+
+        <div class="form-group" id="buttons">
+          <div class="col-sm-12">
+            <button type="submit" class="btn btn-danger btn-lg btn-block" id="login_button-lg">로그인</button>
+          </div>
+          <div class="col-sm-7"><a href="#">아이디/비밀번호 찾기</a></div>
+          <div class="col-sm-5" style="text-align: right;">
+            <a href="#">무료회원가입</a>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">매매</a></li>
+            <li><a href="#">임대</a></li>
+            <li><a href="#">쉐어</a></li>
+            <li><a href="#">집등록</a></li>
+            <li class="nav-icon"><a href="#" style="padding: 0;"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></a></li>
+            <li class="nav-icon"><a href="#" style="padding: 0;"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></a></li>
+            <li class="nav-profile"><a style="padding: 0;"><img src="images/profile.png" class="img-circle"></a></li>
+            <li><a>000님, 환영합니다!</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+
+      <div class="container">
+        <div class="page-header">
+          <h1>집 등록 화면</h1>
+        </div>
+        <div id="step1">
+          <h4>Step1. 위치 정보 입력</h4>
+          <div id="location">
+            <div class="row">
+              <div class="col-lg-6 col-lg-offset-6">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="장소를 입력하세요.">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <table class="table">
+            <tr><th>매물이름</th><td>
+              <form class="form-inline">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="housename" placeholder="매물이름">
+                  <b>(고유번호 BS19847)</b>
+                </div>
+              </form>
+            </td></tr>
+            <tr><th>주소</th><td>
+              <form class="form-inline">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="addressinput" placeholder="주소를 입력하세요.">
+                </div>
+              </form>
+            </td></tr>
+            <tr><th>상세주소</th><td>
+              <form class="form-inline">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="addressdetailinput" placeholder="상세주소를 입력하세요.">
+                </div>
+              </form>
+            </td></tr>
+          </table>
+        </div>
+        <div id="step2">
+          <h4>Step2. 사진 업로드</h4>
+          <div class="row">
+            <div class="col-lg-12" id="image-upload">
+              <p>
+                <button type="button" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-cloud"></span>&nbsp;사진 업로드</button>
+              </p>
+              <p>
+                또는 사진을 드래그하세요.
+              </p>
+            </div>
+            <div id="sub-images">
+              <div class="col-md-3">
+                <a href="#" id="main-image" class="thumbnail">
+                  <span class=" glyphicon glyphicon-plus"></span>
+                </a>
+              </div>
+              <div class="col-md-3">
+                <a href="#" class="thumbnail">
+                  <span class=" glyphicon glyphicon-plus"></span>
+                </a>
+              </div>
+              <div class="col-md-3">
+                <a href="#" class="thumbnail">
+                  <span class=" glyphicon glyphicon-plus"></span>
+                </a>
+              </div>
+              <div class="col-md-3">
+                <a href="#" class="thumbnail">
+                  <span class=" glyphicon glyphicon-plus"></span>
+                </a>
+              </div>
+              <div class="col-md-3">
+                <a href="#" class="thumbnail">
+                  <span class=" glyphicon glyphicon-plus"></span>
+                </a>
+              </div>
+              <div class="col-md-3">
+                <a href="#" class="thumbnail">
+                  <span class=" glyphicon glyphicon-plus"></span>
+                </a>
+              </div>
+              <div class="col-md-3">
+                <a href="#" class="thumbnail">
+                  <span class=" glyphicon glyphicon-plus"></span>
+                </a>
+              </div>
+              <div class="col-md-3">
+                <a href="#" class="thumbnail">
+                  <span class=" glyphicon glyphicon-plus"></span>
+                </a>
+              </div>
+              <div class="col-md-3">
+                <a href="#" class="thumbnail">
+                  <span class=" glyphicon glyphicon-plus"></span>
+                </a>
+              </div>
+              <div class="col-md-3">
+                <a href="#" class="thumbnail">
+                  <span class=" glyphicon glyphicon-plus"></span>
+                </a>
+              </div>
+              <div class="col-md-3">
+                <a href="#" class="thumbnail">
+                  <span class=" glyphicon glyphicon-plus"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="step3">
+          <h4>Step3. 기본 정보</h4>
+          <table class="table">
+            <tr><th>물건유형</th><td>
+              <select>
+                <option selected></option>
+                <option></option>
+              </select>
+            </td></tr>
+            <tr><th>거래구분</th><td>
+              <select>
+                <option selected></option>
+                <option></option>
+              </select>
+            </td></tr>
+            <tr><th>면적</th><td>
+              <form class="form-inline">
+                <div class="form-group">
+                  <select>
+                    <option selected>m&sup2;</option>
+                    <option>평</option>
+                  </select>
+                  <input type="text" class="form-control" id="areainput" placeholder="면적">
+                </div>
+              </form>
+            </td></tr>
+            <tr><th>거래가격</th><td>
+              <form class="form-inline">
+                <div class="form-group">
+                  <div class="checkbox">
+                    <label for="deposit">보증금 여부
+                      <input type="checkbox" id="deposit">
+                    </label>
+                    &nbsp;
+                  </div>
+
+                  <input type="text" class="form-control" id="price" placeholder="거래가격">
+                  <label for="price">만원</label>
+                  &nbsp;월세
+                  <input type="text" class="form-control" id="pricemonth" placeholder="월세">
+                  <label for="pricemonth">만원</label>
+                </div>
+              </form>
+            </td></tr>
+            <tr><th>구성</th><td>
+              방
+              <select id="room">
+                <option selected></option>
+                <option></option>
+              </select>
+              화장실
+              <select id="bathroom">
+                <option selected></option>
+                <option></option>
+              </select>
+            </td></tr>
+            <tr><th>준공년</th><td>
+              <form class="form-inline">
+                <label class="radio-inline"><input type="radio" name="inlineRadioOptions" id="bulitdate1" value="">모름</label>
+                <label class="radio-inline"><input type="radio" name="inlineRadioOptions" id="bulitdate2" value="">년</label>
+                <input type="text" class="form-control"></input>
+              </form>
+            </td></tr>
+            <tr><th>쉐어기간</th><td>
+              <div style="width: 472px;">
+            		<div id="reportrange" class="pull-right"
+            			style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 100%">
+            			<i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp; <span></span>
+            			<b class="caret"></b>
+            		</div>
+            	</div>
+            </td></tr>
+          </table>
+        </div>
+        <div id="step4">
+          <h4>Step4. 세부 정보</h4>
+          <table class="table">
+            <tr><th>관리비</th><td>
+              <form class="form-inline">
+                <label class="radio-inline"><input type="radio" name="inlineRadioOptions" id="manageprice1" value="">없음</label>
+                <label class="radio-inline"><input type="radio" name="inlineRadioOptions" id="manageprice2" value="">1/N</label>
+                <label class="radio-inline"><input type="radio" name="inlineRadioOptions" id="manageprice3" value="" style="vertical-align: middle">
+                  월
+                  <input type="text" class="form-control"></input>
+                  만원
+                </label>
+              </form>
+            </td></tr>
+            <tr><th>시설</th><td>
+              <form class="form-inline">
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="parking" value="">주차장
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="observing" value="">경비시설
+                </label>
+                <div class="form-group">
+                  <input type="text" class="form-control">
+                  <a><span class="label label-danger">추가</span></a>
+                </div>
+              </form>
+            </td></tr>
+            <tr><th>공유품목</th><td>
+              <form class="form-inline">
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="" value="">인터넷
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="" value="">책장
+                </label>
+                <div class="form-group">
+                  <input type="text" class="form-control">
+                  <a><span class="label label-danger">추가</span></a>
+                </div>
+              </form>
+            </td></tr>
+            <tr><th>거주자 조건</th><td>
+              <div class="form-group">
+                성별 :
+                <label class="radio-inline"><input type="radio" name="inlineRadioOptions" id="" value="">남</label>
+                <label class="radio-inline"><input type="radio" name="inlineRadioOptions" id="" value="">녀</label>
+                <label class="radio-inline"><input type="radio" name="inlineRadioOptions" id="" value="">무관</label>
+              </div>
+              <div class="form-group">
+                연령 :
+                <select>
+                  <option></option>
+                </sclect>
+                &nbsp;<label class="radio-inline"><input type="radio" name="inlineRadioOptions" id="" value="">무관</label>
+              </div>
+              <div class="form-group">
+                직업 :
+                <select>
+                  <option></option>
+                </sclect>
+                &nbsp;<label class="radio-inline"><input type="radio" name="inlineRadioOptions" id="" value="">무관</label>
+              </div>
+              <form class="form-inline">
+                <div class="form-group">
+                  <input type="text" class="form-control">
+                  <a><span class="label label-danger">추가</span></a>
+                </div>
+              </form>
+            </td></tr>
+            <tr><th>상세설명</th><td>
+              <p>경기도 안양에 위치한 아파트입니다. 현재 남자 둘이 살고 있으며 둘 다
+                비흡연자입니다. 동거인이 1년간 해외로 발령이 나서 그 기간 동안
+                방을 공유합니다.
+            </td></tr>
+          </table>
+        </div>
+      </div>
+
+    </main>
+  </body>
+</html>

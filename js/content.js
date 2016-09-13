@@ -1,10 +1,23 @@
 $(document).ready(function(){
-  $('.glyphicon-heart').click(function(){
+  $('span.glyphicon-heart').click(function(){
     $(this).addClass('.glyphicon-heart-empty');
     $(this).removeClass('.glyphicon-heart');
   });
-  $('.glyphicon-heart-empty').click(function(){
+  $('span.glyphicon-heart-empty').click(function(){
     $(this).addClass('.glyphicon-heart');
     $(this).removeClass('.glyphicon-heart-empty');
+  });
+
+  $('.etcdate').click(function(){
+    $('#datepick-back').removeClass('date-hide');
+    $('#datepick').removeClass('date-hide');
+  });
+  $('#datepick-back').click(function(){
+    $('#datepick-back').removeClass('date-hide');
+    $('#datepick').removeClass('date-hide');
+  });
+  $('#good').click(function(){
+    $('#datepick-back').addClass('login_hide');
+    $('#datepick').addClass('login_hide');
   });
 });

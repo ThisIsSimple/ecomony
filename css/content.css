@@ -5,6 +5,39 @@ ul {
   margin: 0;
 }
 
+/* datepick */
+#datepick {
+  position: fixed;
+  top: 200px;
+  left: 36vw;
+  z-index: 100;
+  width: 550px;
+  height: 200px;
+}
+
+#datepick .container {
+  width: 500px;
+}
+
+#datepick button {
+  float: right;
+  margin-top: 20px;
+  margin-right: 25px;
+}
+
+#datepick-back {
+  position: absolute;
+  background-color: #000;
+  opacity: 0.5;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+}
+
+.date-hide {
+  display: none;
+}
+
 /* dropdown */
 .dropdown .row {
   background-color: inherit !important;
