@@ -1,6 +1,7 @@
 .row {
   background-color: #fff;
   margin: 0;
+  padding-bottom: 150px;
 }
 
 main > .container {
@@ -12,11 +13,31 @@ main > .container {
 }
 
 #user .thumbnail {
-  height: 300px;
+  height: 250px;
+  width: 170px;
+  padding-top: 87px;
+  text-align: center;
+}
+
+#user .thumbnail p {
+  font-size: 12px;
+}
+
+#user .thumbnail:hover {
+  border-color: #D9534F;
 }
 
 .disnone {
   display: none;
+}
+
+.btn-next {
+  float: right;
+  margin-top: 10px;
+}
+
+.upload-icon {
+  width: 30px;
 }
 
 
@@ -53,6 +74,7 @@ h4 {
 
 #step2 #main-image {
   height: 340px;
+  padding: 150px 0;
 }
 
 #step2 #sub-images span {
@@ -61,15 +83,16 @@ h4 {
   margin: 60px 0;
 }
 
-#step2 #main-image span {
-  margin: 150px 0;
-}
-
 #step2 .thumbnail:hover {
   border-color: #D9534F;
 }
 
-#step4 .form-control {
+#step4 .form-control.add-op {
   width: 60px;
   height: 20px;
+}
+
+#step4 .col-md-7 {
+  margin: 0;
+  padding: 0;
 }

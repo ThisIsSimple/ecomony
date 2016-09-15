@@ -7,4 +7,8 @@ $(document).ready(function(){
     $('#gongin').addClass('disnone');
     $('#personal').removeClass('disnone');
   });
+  $('#inlineRadio3').click(function(){
+    $('#gongin').addClass('disnone');
+    $('#personal').removeClass('disnone');
+  });
 });
