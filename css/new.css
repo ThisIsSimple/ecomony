@@ -12,11 +12,17 @@ main > .container {
 }
 
 #user .thumbnail {
-  height: 300px;
+  height: 250px;
+  width: 150px;
 }
 
 .disnone {
   display: none;
+}
+
+.btn-next {
+  float: right;
+  margin-top: 10px;
 }
 
 
