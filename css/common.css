@@ -3,6 +3,10 @@ body {
   font-size: 16px;
 }
 
+a {
+  color: #D9534F;
+}
+
 .blank {
   height: 50px;
 }
