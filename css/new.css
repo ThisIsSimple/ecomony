@@ -13,7 +13,17 @@ main > .container {
 
 #user .thumbnail {
   height: 250px;
-  width: 150px;
+  width: 170px;
+  padding-top: 87px;
+  text-align: center;
+}
+
+#user .thumbnail p {
+  font-size: 12px;
+}
+
+#user .thumbnail:hover {
+  border-color: #D9534F;
 }
 
 .disnone {
@@ -23,6 +33,10 @@ main > .container {
 .btn-next {
   float: right;
   margin-top: 10px;
+}
+
+.upload-icon {
+  width: 30px;
 }
 
 
