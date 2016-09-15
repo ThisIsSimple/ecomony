@@ -11,21 +11,24 @@
     <link rel="stylesheet" href="css/common.css" media="screen" title="no title">
     <link rel="stylesheet" href="css/index.css" media="screen" title="no title">
     <link rel="stylesheet" href="css/login.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/footer.css" media="screen" title="no title">
 
   </head>
   <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/login.js"></script>
+    <script src="js/index.js"></script>
 
     <div id="login_back" class="login_hide"></div>
 
     <div class="panel panel-default login_hide" id="login">
+      <div class="col-sm-1 col-sm-offset-11" style="padding-top: 0;">
+        <button type="submit" id="close_btn" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-remove"></span></button>
+      </div>
+      <div class="blank"></div>
       <div class="col-sm-11">
         <h4>로그인</h4>
-      </div>
-      <div class="col-sm-1">
-        <button type="submit" id="close_btn" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-remove"></span></button>
       </div>
       <form class="form-horizontal">
         <div class="form-group">
@@ -37,7 +40,7 @@
           <div class="col-sm-12">
             <input type="password" class="form-control" id="inputPassword3" placeholder="비밀번호">
           </div>
-          <div class="col-sm-offset-6 col-sm-6" id="remember">
+          <div class="col-sm-12" id="remember">
             <div class="checkbox"><label><input type="checkbox">로그인 기억하기</label></div>
           </div>
         </div>
@@ -46,10 +49,13 @@
           <div class="col-sm-12">
             <button type="submit" class="btn btn-danger btn-lg btn-block" id="login_button-lg">로그인</button>
           </div>
-          <div class="col-sm-7"><a href="#">아이디/비밀번호 찾기</a></div>
-          <div class="col-sm-5" style="text-align: right;">
-            <a href="#">무료회원가입</a>
-          </div>
+        </div>
+
+        <div class="blank"></div><div class="blank"></div>
+
+        <div class="col-sm-7"><a href="#">아이디/비밀번호 찾기</a></div>
+        <div class="col-sm-5" style="text-align: right;">
+          <a href="#">무료회원가입</a>
         </div>
       </form>
     </div>
@@ -85,42 +91,33 @@
       <div class="jumbotron">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6 col-lg-offset-3">
+            <div class="col-lg-1 col-lg-offset-3">
+              <div id="selectbox">
+                <label for="selectlist">매매</label>
+                <select id="selectlist">
+                  <option selected>매매</option>
+                  <option>전세</option>
+                  <option>월세</option>
+                  <option>쉐어</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-5">
               <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search for...">
-                <span class="input-group-btn">
-                  <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-                </span>
+                <input type="text" class="form-control" placeholder="원하는 정보를 검색해주세요.">
+                <span class="input-group-btn"><button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button></span>
               </div>
             </div>
           </div>
         </div>
-
-        <div id="jumbo_label">
-           <h3>집을 구할 땐 실주거비용을 확인해야합니다.</h3>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row" id="main_content">
-          <div class="col-lg-12">
-            <h4>실거주 비용이란?</h4>
-            <p>말 그대로 실제 거주에 필요한 비용을 뜻합니다.</p>
-          </div>
-          <div class="col-lg-12 blank"></div>
-          <div class="col-lg-4">
-            <img src="images/house.png">
-            <p>때론 매매가 더 저렴할 수 있습니다.</p>
-          </div>
-          <div class="col-lg-4">
-            <img src="images/house.png">
-            <p>자신의 상황에 맞는 집을 구할 수 있다.</p>
-          </div>
-          <div class="col-lg-4">
-            <img src="images/house.png">
-            <p>집값 상승 하락의 걱정이 없다.</p>
-          </div>
-        </div>
       </div>
     </main>
+
+    <footer>
+      <div id="sitemap">
+      </div>
+      <div id="copyright">
+      </div>
+    </footer>
   </body>
 </html>
