@@ -1,4 +1,6 @@
 $(document).ready(function(){
+  $('.dropdown-toggle').dropdown()
+  
   $('span.glyphicon-heart').click(function(){
     $(this).addClass('.glyphicon-heart-empty');
     $(this).removeClass('.glyphicon-heart');
@@ -22,8 +24,6 @@ $(document).ready(function(){
   });
 
   $('ul.dropdown-menu').on('click', function(event){
-    // The event won't be propagated up to the document NODE and
-    // therefore delegated events won't be fired
     event.stopPropagation();
   });
 });
