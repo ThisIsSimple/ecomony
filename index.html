@@ -79,8 +79,8 @@
             <li><a href="#">임대</a></li>
             <li><a href="#">쉐어</a></li>
             <li><a href="#">집등록</a></li>
-            <li class="nav-icon"><a href="#" style="padding: 0;"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></a></li>
-            <li class="nav-icon"><a href="#" style="padding: 0;"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></a></li>
+            <li class="nav-icon"><a href="#" style="padding: 0;"><span class="glyphicon glyphicon-comment" aria-hidden="true"><div class="count">1</p></div></span></a></li>
+            <li class="nav-icon"><a href="#" style="padding: 0;"><span class="glyphicon glyphicon-heart" aria-hidden="true"><div class="count">1</p></div></a></li>
             <li id="login_button"><a href="#">로그인</a></li>
           </ul>
         </div>
@@ -91,19 +91,19 @@
       <div class="jumbotron">
         <div class="container">
           <div class="row">
-            <div class="col-lg-1 col-lg-offset-3">
-              <div id="selectbox">
-                <label for="selectlist">매매</label>
-                <select id="selectlist">
-                  <option selected>매매</option>
-                  <option>전세</option>
-                  <option>월세</option>
-                  <option>쉐어</option>
-                </select>
-              </div>
-            </div>
-            <div class="col-lg-5">
+            <div class="col-lg-6 col-lg-offset-3">
               <div class="input-group">
+                <span class="input-group-btn">
+                  <div id="selectbox">
+                    <label for="selectlist">매매</label>
+                    <select id="selectlist">
+                      <option selected>매매</option>
+                      <option>전세</option>
+                      <option>월세</option>
+                      <option>쉐어</option>
+                    </select>
+                  </div>
+                </span>
                 <input type="text" class="form-control" placeholder="원하는 정보를 검색해주세요.">
                 <span class="input-group-btn"><button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button></span>
               </div>
@@ -113,9 +113,15 @@
       </div>
     </main>
 
+    <div class="blank"></div>
+    <div class="blank"></div>
+    <div class="blank"></div>
+    <div class="blank"></div>
+    <div class="blank"></div>
+    <div class="blank"></div>
+
+
     <footer>
-      <div id="sitemap">
-      </div>
       <div id="copyright">
       </div>
     </footer>

@@ -5,6 +5,26 @@ ul {
   margin: 0;
 }
 
+#profile {
+  min-height: 540px;
+  height: 80vh;
+  padding-top: 10px;
+}
+
+#profile .col-lg-3, #profile .col-lg-9 {
+  margin: 0;
+}
+
+#profile table tr td:first-child {
+  min-width: 150px;
+}
+
+
+.glyphicon-star {
+  color: #FED130;
+}
+
+
 /* dropdown */
 .dropdown .row {
   background-color: inherit !important;
@@ -31,7 +51,8 @@ nav .radio-inline input, nav .checkbox input {
 
 
 #map {
-  height: calc(100vh - 60px);
+  min-height: 1100px;
+  height: 100vh;
   background: url("../images/map.png") no-repeat center center;
 }
 
@@ -141,14 +162,12 @@ nav .radio-inline input, nav .checkbox input {
   padding-top: 6px;
 }
 
-
-
-
-
 #result_list {
-  height: 390px;
   overflow: auto;
+  min-height: 338px;
+  height: 20vh;
   width: calc(100% + 14px);
+  margin-bottom: 30px;
 }
 
 .hide_scroll {
