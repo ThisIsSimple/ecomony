@@ -67,6 +67,10 @@ h4 {
   margin-bottom: 30px;
 }
 
+#step1 #housename, #addressinput, #addressdetailinput {
+  width: 300px;
+}
+
 #step2 .thumbnail {
   min-height: 160px;
   text-align: center;

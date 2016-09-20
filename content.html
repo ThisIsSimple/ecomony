@@ -27,22 +27,6 @@
     <script src="js/content.js"></script>
     <script src="js/login.js"></script>
 
-    <div id="datepick-back" class="date-hide"></div>
-
-    <div id="datepick" class="panel panel-default date-hide">
-      <div class="panel-heading"><h4>기타 기간</h4></div>
-      <div class="panel-body">
-        <div class="container">
-      		<div id="reportrange" class="pull-right"
-      			style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 100%">
-      			<i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp; <span></span>
-      			<b class="caret"></b>
-      		</div>
-      	</div>
-        <button type="button" id="good" class="btn btn-success">적용</button>
-      </div>
-    </div>
-
     <div id="login_back" class="login_hide"></div>
 
     <div class="panel panel-default login_hide" id="login">
@@ -99,8 +83,8 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">거주기간<span class="caret"></span></a>
-              <ul class="dropdown-menu asdf">
+              <a href="#" class="dropdown-toggle choosedate" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">거주기간<span class="caret"></span></a>
+              <ul class="dropdown-menu">
                 <li><a href="#">단기(2년 이하)</a></li>
                 <li><a href="#">중기(2~4년)</a></li>
                 <li><a href="#">장기(5년 이상)</a></li>
@@ -265,7 +249,10 @@
                       <li><h4 class="mdeia-heading">진흥아파트</h4></li>
                       <li>임대(전) : 30</li>
                       <li>보증금 : 500</li>
-                      <li><a href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></a></li>
+                      <li><a href="#">
+                        <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-heart display-none" aria-hidden="true"></span>
+                      </a></li>
                     </ul>
                   </div>
                   <table class="table">

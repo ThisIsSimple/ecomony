@@ -1,29 +1,21 @@
 $(document).ready(function(){
   $('.dropdown-toggle').dropdown()
-  
-  $('span.glyphicon-heart').click(function(){
-    $(this).addClass('.glyphicon-heart-empty');
-    $(this).removeClass('.glyphicon-heart');
-  });
-  $('span.glyphicon-heart-empty').click(function(){
-    $(this).addClass('.glyphicon-heart');
-    $(this).removeClass('.glyphicon-heart-empty');
-  });
 
-  $('.etcdate').click(function(){
-    $('#datepick-back').removeClass('date-hide');
-    $('#datepick').removeClass('date-hide');
+  $('.heart').click(function(){
+    $(this).addClass('glyphicon-heart-empty');
+    $(this).removeClass('glyphicon-heart');
   });
-  $('#datepick-back').click(function(){
-    $('#datepick-back').removeClass('date-hide');
-    $('#datepick').removeClass('date-hide');
-  });
-  $('#good').click(function(){
-    $('#datepick-back').addClass('login_hide');
-    $('#datepick').addClass('login_hide');
+  $('.heart').click(function(){
+    $(this).addClass('glyphicon-heart');
+    $(this).removeClass('glyphicon-heart-empty');
   });
 
   $('ul.dropdown-menu').on('click', function(event){
     event.stopPropagation();
+  });
+
+  $('#reportrange').click(function(){
+    $('.daterangepicker').addClass('show-calendar');
+    $('.ranges').addClass('display-none');
   });
 });
