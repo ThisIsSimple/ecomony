@@ -3,7 +3,7 @@
   top: 20vh;
   left: 40vw;
   width: 336px;
-  z-index: 100;
+  z-index: 1032;
 }
 
 #login.panel {
@@ -48,5 +48,5 @@
   opacity: 0.5;
   width: 100vw;
   height: 100vh;
-  z-index: 99;
+  z-index: 1031;
 }

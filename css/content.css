@@ -66,6 +66,7 @@ nav .radio-inline input, nav .checkbox input {
 #map {
   height: calc(100vh - 60px);
   background: url("../images/map.png") no-repeat center center;
+  background-size: cover;
 }
 
 .row {
