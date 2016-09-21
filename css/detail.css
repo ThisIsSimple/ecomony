@@ -7,7 +7,6 @@ ul {
 
 #profile {
   min-height: 540px;
-  height: 80vh;
   padding-top: 10px;
 }
 
@@ -20,7 +19,7 @@ ul {
 }
 
 
-.glyphicon-star {
+.glyphicon-star, .glyphicon-star-empty {
   color: #FED130;
 }
 
@@ -51,9 +50,10 @@ nav .radio-inline input, nav .checkbox input {
 
 
 #map {
-  min-height: 1100px;
-  height: 100vh;
+
+  height: 130vh;
   background: url("../images/map.png") no-repeat center center;
+  background-size: cover;
 }
 
 .row {
@@ -164,13 +164,31 @@ nav .radio-inline input, nav .checkbox input {
 
 #result_list {
   overflow: auto;
-  min-height: 338px;
-  height: 20vh;
+  height: 375px;
   width: calc(100% + 14px);
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 .hide_scroll {
   overflow: hidden;
   width: 100%;
 }
+
+
+
+
+
+
+
+.star_rating {font-size:0; letter-spacing:-4px;}
+.star_rating a {
+    font-size:22px;
+    letter-spacing:0;
+    display:inline-block;
+    margin-left:5px;
+    color:#FED130;
+    opacity: 0.4;
+    text-decoration:none;
+}
+.star_rating a:first-child {margin-left:0;}
+.star_rating a.on {color:#FED130;opacity: 1;}

@@ -27,6 +27,7 @@
     <script src="js/common.js"></script>
     <script src="js/content.js"></script>
     <script src="js/login.js"></script>
+    <script src="js/detail.js"></script>
 
     <div id="login_back" class="login_hide"></div>
 
@@ -68,7 +69,7 @@
       </form>
     </div>
 
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -249,8 +250,8 @@
                   <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                   <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                   <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                  <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
                 </div>
                 <div class="panel-body">
 
@@ -258,7 +259,7 @@
                   <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                   <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                   <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
                   영춘권과 중개 스킬이 뛰어납니다! 추천합니다.
 
                   <br>
@@ -290,12 +291,14 @@
 
                 </div>
               </div>
-              별점선택
-              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <p style="display: inline">별점선택</p>
+              <p class="star_rating" style="display: inline">
+                <a href="#" class="on">★</a>
+                <a href="#" class="on">★</a>
+                <a href="#" class="on">★</a>
+                <a href="#">★</a>
+                <a href="#">★</a>
+              </p>
               <div class="input-group">
                 <span class="input-group-addon" id="basic-addon1"><img src="images/profile.png" width="50px;"></span>
                 <textarea class="form-control" placeholder="평가를 남겨주세요!" style="resize: none; height: 80px;"></textarea>

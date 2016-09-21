@@ -1,7 +1,7 @@
 .row {
   background-color: #fff;
   margin: 0;
-  padding-bottom: 150px;
+  padding-bottom: 100px;
 }
 
 main > .container {
@@ -59,10 +59,10 @@ h4 {
 
 
 #image-upload {
-  height: 200px;
+  height: 337px;
   text-align: center;
   border: 2px dashed #D9534F;
-  padding-top: 65px;
+  padding-top: 130px;
   margin: 0px;
   margin-bottom: 30px;
 }
@@ -77,8 +77,9 @@ h4 {
 }
 
 #step2 #main-image {
-  height: 340px;
-  padding: 150px 0;
+  width: 285px;
+  height: 160px;
+  padding: 67px 0;
 }
 
 #step2 #sub-images span {
