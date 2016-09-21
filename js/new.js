@@ -11,4 +11,13 @@ $(document).ready(function(){
     $('#gongin').addClass('disnone');
     $('#personal').removeClass('disnone');
   });
+
+  $('.share1').click(function(){
+    $('.new2').addClass('display-none');
+    $('.new1').removeClass('display-none');
+  });
+  $('.share2').click(function(){
+    $('.new1').addClass('display-none');
+    $('.new2').removeClass('display-none');
+  });
 });

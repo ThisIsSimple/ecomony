@@ -1,0 +1,36 @@
+#login {
+  width: 336px;
+  z-index: 100;
+}
+
+#login.panel {
+  padding-top: 0 !important;
+  height: 420px;
+}
+
+#login .col-sm-11, #login .col-sm-1 {
+  padding: 0;
+}
+
+#login .col-sm-1 {
+  padding-top: 7px;
+}
+
+#login.panel {
+  padding: 20px;
+  padding-bottom: 5px;
+}
+
+#remember.col-sm-2 {
+  padding: 0;
+}
+
+.col-sm-5, .col-sm-7 {
+  padding: 0;
+}
+
+
+
+main {
+  padding: 171px 40vw;
+}

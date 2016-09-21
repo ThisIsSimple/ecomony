@@ -1,0 +1,69 @@
+.innercontent .panel-body {
+  padding: 0;
+}
+
+.innercontent .col-md-1,
+.innercontent .col-md-2,
+.innercontent .col-md-3,
+.innercontent .col-md-4,
+.innercontent .col-md-5,
+.innercontent .col-md-6,
+.innercontent .col-md-7,
+.innercontent .col-md-8,
+.innercontent .col-md-9,
+.innercontent .col-md-10,
+.innercontent .col-md-11,
+.innercontent .col-md-12
+ {
+  padding: 0;
+}
+
+.inner-detail-more {
+  border: 1px solid #666;
+}
+
+.inner-detail-more > .col-md-12 {
+  padding: 10px;
+}
+
+.innercontent tr th:first-child {
+  width: 100px;
+  padding: 0;
+  padding-left: 5px;
+}
+
+.inner-mainimg {
+  height: 500px;
+}
+
+.inner-subimg {
+  height: 100px;
+}
+
+.graph, .pay-construction {
+  width: 100%;
+}
+
+.profile-img {
+  width: 120px;
+}
+
+#map {
+  height: 300px;
+}
+
+.inner-detail-more {
+  height: 535px;
+  overflow-y: scroll;
+}
+
+
+
+.inner-detail4 table tr td:first-child {
+  width: 100px;
+}
+
+.inner-footer {
+  margin-top: 20px;
+  border-top: 2px solid #666;
+}

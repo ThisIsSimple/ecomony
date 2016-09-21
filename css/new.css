@@ -92,12 +92,12 @@ h4 {
   border-color: #D9534F;
 }
 
-#step4 .form-control.add-op {
+.step4 .form-control.add-op {
   width: 60px;
   height: 20px;
 }
 
-#step4 .col-md-7 {
+.step4 .col-md-7 {
   margin: 0;
   padding: 0;
 }
